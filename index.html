@@ -1,0 +1,115 @@
+<html>
+	<head>
+		<title>Calculator</title>
+        <link rel="stylesheet" href="c1.css">
+        <script src="j1.js"></script>
+	</head>
+	<body>
+        <header>
+            <p>I'm a Calculator.</p>
+            <a href="#calc">Lets Calculate</a>
+        </header>
+        <h1 id="calc">Area Calculator</h1>
+        <button id="toggleButton">Switch to 3D</button>
+        <div id="2dCalculator" class="calculator">
+            <div class="container">
+                <div class="sub-container">
+                    <p>Rectangle</p>
+                    <form onsubmit="rectangle()">
+                        <input type="number" step="any" placeholder="Enter Length" id="length">
+                        <input type="number" step="any" placeholder="Enter Breadth" id="breadth">
+                        <input type="submit" value="Calculate">
+                    </form>
+                </div>
+                <div class="ans-container">
+                    <p>Result</p>
+                    <p id="ans">Ans will be displayed here.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="sub-container">
+                    <p>Square</p>
+                    <form onsubmit="square()">
+                        <input type="number" step="any" placeholder="Enter Length of a side" id="sq-length">
+                        <input type="submit" value="Calculate">
+                    </form>
+                </div>
+                <div class="ans-container">
+                    <p>Result</p>
+                    <p id="sq-ans">Ans will be displayed here.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="sub-container">
+                    <p>Triangle</p>
+                    <form onsubmit="triangle()">
+                        <input type="number" step="any" placeholder="Enter Length of a Base" id="tri-base">
+                        <input type="number" step="any" placeholder="Enter Height" id="tri-height">
+                        <input type="submit" value="Calculate">
+                    </form>
+                </div>
+                <div class="ans-container">
+                    <p>Result</p>
+                    <p id="tri-ans">Ans will be displayed here.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="sub-container">
+                    <p>Circle</p>
+                    <form onsubmit="circle()">
+                        <input type="number" step="any" placeholder="Enter radius" id="circleRadius">
+                        <input type="submit" value="Calculate">
+                    </form>
+                </div>
+                <div class="ans-container">
+                    <p>Result</p>
+                    <p id="circleAns">Ans will be displayed here.</p>
+                </div>
+            </div>
+        </div>
+        <div id="3dCalculator" class="calculator" style="display: none;">
+            <div class="container">
+                <div class="sub-container">
+                    <p>Cuboid</p>
+                    <form onsubmit="cuboid()">
+                        <input type="number" step="any" placeholder="Enter Length" id="cuboidLength">
+                        <input type="number" step="any" placeholder="Enter Height" id="cuboidHeight">
+                        <input type="number" step="any" placeholder="Enter Width" id="cuboidWidth">
+                        <input type="submit" value="Calculate">
+                    </form>
+                </div>
+                <div class="ans-container">
+                    <p>Result</p>
+                    <p id="cuboidAns">Ans will be displayed here.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="sub-container">
+                    <p>Cube</p>
+                    <form onsubmit="cube()">
+                        <input type="number" step="any" placeholder="Enter Length of a side" id="cubeLength">
+                        <input type="submit" value="Calculate">
+                    </form>
+                </div>
+                <div class="ans-container">
+                    <p>Result</p>
+                    <p id="cubeAns">Ans will be displayed here.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="sub-container">
+                    <p>Sphere</p>
+                    <form onsubmit="sphere()">
+                        <input type="number" step="any" placeholder="Enter radius" id="sphereRadius">
+                        <input type="submit" value="Calculate">
+                    </form>
+                </div>
+                <div class="ans-container">
+                    <p>Result</p>
+                    <p id="sphereAns">Ans will be displayed here.</p>
+                </div>
+            </div>
+        </div>
+	</body>
+</html>
+
