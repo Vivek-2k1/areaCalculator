@@ -26,9 +26,20 @@ function rectangle(){
 
     if(len.value == "" || bth.value == ""){
         alert("Inputs cannot be Empty !");
+        ans.innerHTML = "Ans will be displayed here.";
     }
     else if(len.value <= 0 || bth.value <= 0){
-        alert("Positive Inputs Only !")
+        alert("Length or Breadth cannot be smaller than or equal to 0 !");
+        len.value = "";
+        bth.value = "";
+        ans.innerHTML = "Ans will be displayed here.";
+        len.focus();
+    }
+    else if(len.value > 100 || bth.value > 100){
+        alert("Length or Breadth cannot be greater than 100 !");
+        len.value = "";
+        bth.value = "";
+        ans.innerHTML = "Ans will be displayed here.";
         len.focus();
     }
     else{
@@ -43,9 +54,18 @@ function square(){
 
     if(len.value == ""){
         alert("Inputs cannot be Empty !");
+        ans.innerHTML = "Ans will be displayed here.";
     }
     else if(len.value <= 0){
-        alert("Positive Inputs Only !")
+        alert("Length cannot be smaller than or equal to 0 !");
+        len.value = "";
+        ans.innerHTML = "Ans will be displayed here.";
+        len.focus();
+    }
+    else if(len.value > 100){
+        alert("Length cannot be greater than 100 !");
+        len.value = "";
+        ans.innerHTML = "Ans will be displayed here.";
         len.focus();
     }
     else{
@@ -61,9 +81,20 @@ function triangle(){
 
     if(base.value == "" || height.value == ""){
         alert("Inputs cannot be Empty !");
+        ans.innerHTML = "Ans will be displayed here.";
     }
     else if(base.value <= 0 || height.value <= 0){
-        alert("Positive Inputs Only !")
+        alert("Length or Height cannot be smaller than or equal to 0 !");
+        base.value = "";
+        height.value = "";
+        ans.innerHTML = "Ans will be displayed here.";
+        base.focus();
+    }
+    else if(base.value > 100 || height.value > 100){
+        alert("Length or Height cannot be greater than 100 !");
+        base.value = "";
+        height.value = "";
+        ans.innerHTML = "Ans will be displayed here.";
         base.focus();
     }
     else{
@@ -79,9 +110,18 @@ function circle(){
 
     if(radius.value == ""){
         alert("Inputs cannot be Empty !");
+        ans.innerHTML = "Ans will be displayed here.";
     }
     else if(radius.value <= 0){
-        alert("Positive Inputs Only !")
+        alert("Radius cannot be smaller than or equal to 0 !");
+        radius.value = "";
+        ans.innerHTML = "Ans will be displayed here.";
+        radius.focus();
+    }
+    else if(radius.value > 100){
+        alert("Radius cannot be greater than 100 !");
+        radius.value = "";
+        ans.innerHTML = "Ans will be displayed here.";
         radius.focus();
     }
     else{
@@ -99,9 +139,22 @@ function cuboid(){
 
     if(len.value == "" || wth.value == "" || ht.value == ""){
         alert("Inputs cannot be Empty !");
+        ans.innerHTML = "Ans will be displayed here.";
     }
     else if(len.value <= 0 || wth.value <= 0 || ht.value <= 0){
-        alert("Positive Inputs Only !")
+        alert("Length, Width or Height cannot be less than or equal to 0 !");
+        len.value = "";
+        ht.value = "";
+        wth.value = "";
+        ans.innerHTML = "Ans will be displayed here.";
+        len.focus();
+    }
+    else if(len.value > 100 || wth.value > 100 || ht.value > 100){
+        alert("Length, Width or Height cannot be greater than 100 !");
+        len.value = "";
+        ht.value = "";
+        wth.value = "";
+        ans.innerHTML = "Ans will be displayed here.";
         len.focus();
     }
     else{
@@ -118,9 +171,18 @@ function cube(){
 
     if(len.value == ""){
         alert("Inputs cannot be Empty !");
+        ans.innerHTML = "Ans will be displayed here.";
     }
     else if(len.value <= 0){
-        alert("Positive Inputs Only !")
+        alert("Length cannot be less than or equal to 0 !");
+        len.value = "";
+        ans.innerHTML = "Ans will be displayed here.";
+        len.focus();
+    }
+    else if(len.value > 100){
+        alert("Length cannot be greater than 100 !");
+        len.value = "";
+        ans.innerHTML = "Ans will be displayed here.";
         len.focus();
     }
     else{
@@ -136,9 +198,18 @@ function sphere(){
 
     if(radius.value == ""){
         alert("Inputs cannot be Empty !");
+        ans.innerHTML = "Ans will be displayed here.";
     }
     else if(radius.value <= 0){
-        alert("Positive Inputs Only !")
+        alert("Radius cannot be less than or equal to 0 !");
+        radius.value = "";
+        ans.innerHTML = "Ans will be displayed here.";
+        radius.focus();
+    }
+    else if(radius.value > 100){
+        alert("Radius cannot be greater than 100 !");
+        radius.value = "";
+        ans.innerHTML = "Ans will be displayed here.";
         radius.focus();
     }
     else{
